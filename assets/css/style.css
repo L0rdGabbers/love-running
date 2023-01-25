@@ -42,7 +42,7 @@ h1, h2 {
 #menu li {
     list-style-type: none; 
     margin-right: 3%;
-    display: inline-block;
+    display: inline;
 }
 
 #menu a {
@@ -277,5 +277,18 @@ footer {
     }
     hr {
         display: none;
+    }
+}
+
+/* For small screen sizes from 950px wide and below */
+
+@media screen and (max-width: 950px) {
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 4%;
+        margin-bottom: 20px;
+        line-height: 25px;
+        white-space: nowrap;
     }
 }
